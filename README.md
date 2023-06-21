@@ -1,44 +1,42 @@
-# Next.js Enterprise Boilerplate
-
+# Next.js RTK IT Boilerplate
 ![Project intro image](./project-logo.png)
+Добро пожаловать в _RTK IT Boilerplate_, опенсорсный шаблон для интерпрайзных проектов РТК ИТ. Он полон полезных фич, которые помогают создавать высокопроизводительные, поддерживаемые и удобные приложения. Просто склонируй себе этот шаблон и начинай кодить в удовольствие
 
-Welcome to the _Next.js Enterprise Boilerplate_, an open-source template for enterprise projects! It's loaded with features that'll help you build a high-performance, maintainable, and enjoyable app. We've done all the heavy lifting for you, so sit back, relax, and get ready to conquer the world with your incredible app! 🌍
 
-## 📚 Features
-
-With this template, you get all the awesomeness you need:
-
-- 🏎️ **[Next.js](https://nextjs.org/)** - Fast by default, with config optimized for performance
-- 💅 **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapid UI development
-- ✨ **[ESlint](https://eslint.org/)** and **[Prettier](https://prettier.io/)** - For clean, consistent, and error-free code
-- 🛠️ **[Extremely strict TypeScript](https://www.typescriptlang.org/)** - With [`ts-reset`](https://github.com/total-typescript/ts-reset) library for ultimate type safety
-- 📊 **[Bundle analyzer plugin](https://www.npmjs.com/package/@next/bundle-analyzer)** - Keep an eye on your bundle size
-- 🧪 **[Jest](https://jestjs.io/)** and **[React Testing Library](https://testing-library.com/react)** - For rock-solid unit and integration tests
-- 🎭 **[Playwright](https://playwright.dev/)** - Write end-to-end tests like a pro
-- 📕 **[Storybook](https://storybook.js.org/)** - Create, test, and showcase your components
+## 📚 Фичи
+С этим шаблоном вы получите все, что вам нужно
+- 🏎️ **[Next.js](https://nextjs.org/)** - Быстрый по умолчанию
+- ✨ **[ESlint](https://eslint.org/)** и **[Prettier](https://prettier.io/)** - Инструменты качества кода с шаблоном для **[РТК ИТ](https://github.com/rtkit-ulsk/eslint-config-rtkit)**
+- ✨ **[StyleLint](https://stylelint.io/)** - Инструменты качества для css 
+- 🛠️ **[Максимально строгий TypeScript](https://www.typescriptlang.org/)** - Вместе с [`ts-reset`](https://github.com/total-typescript/ts-reset) библиотекой для увеличения безопасности
+- 📊 **[Плагин для анализа билда](https://www.npmjs.com/package/@next/bundle-analyzer)** - Будьте в курсе того, что попадает в ваш бандл
+- 🧪 **[Jest](https://jestjs.io/)** и **[React Testing Library](https://testing-library.com/react)** - Для юнит и интеграционных тестов
+- 🎭 **[Playwright](https://playwright.dev/)** - Пиши e2e тесты как про
+- 📕 **[Storybook](https://storybook.js.org/)** - Создавай, тестируй и показывай свои компоненты
 - 🌬️ **Smoke Testing** and **Acceptance Tests** - For confidence in your deployments
-- 📝 **[Conventional commits git hook](https://www.conventionalcommits.org/)** - Keep your commit history neat and tidy
-- 🔍 **[Observability](https://opentelemetry.io/)** - Open Telemetry integration for seamless monitoring
-- 🎯 **[Absolute imports](https://nextjs.org/docs/advanced-features/module-path-aliases)** - No more spaghetti imports
-- ⚕️ **[Health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-compatible for robust deployments
-- 🧩 **[Radix UI](https://www.radix-ui.com/)** - Headless UI components for endless customization
-- 💎 **[CVA](http://cva.style/)** - Create a consistent, reusable, and atomic design system
-- 🤖 **[Renovate BOT](https://www.whitesourcesoftware.com/free-developer-tools/renovate)** - Auto-updating dependencies, so you can focus on coding
-- 🩹 **[Patch-package](https://www.npmjs.com/package/patch-package)** - Fix external dependencies without losing your mind
-- 📈 **Components coupling and cohesion graph** - A tool for managing component relationships
-- 🚀 **[GitHub Actions](https://github.com/features/actions)** - Pre-configured actions for smooth workflows, including Bundle Size and performance stats
-- 🤖🧠 **[Automated ChatGPT Code Reviews](https://openai.com/chatgpt)** - **Stay on the cutting edge with AI-powered code reviews!**
-- 💯 **Perfect Lighthouse score** - Because performance matters
-- 🚢 **[Semantic Release](https://github.com/semantic-release/semantic-release)** - for automatic changelog
-- 💻 **[T3 Env](https://env.t3.gg/)** - Manage your environment variables with ease
+ 📝 **[Conventional commits git hook](https://www.conventionalcommits.org/)** - Сохраните историю комитов чистой и лаконичной
+ - 🎯 **[Абсолютные импорты](https://nextjs.org/docs/advanced-features/module-path-aliases)** - Никаких больше спагетти импортов
+ - ⚕️ **[Health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)** - Kubernetes-совместимая проверка для надежного деплоя
+ - 🧩 **[RTK IT UI-KIT](https://design.rt.ru/storybook/?path=/story/documentation-introduction--page)** - Набор UI компонентов для react от дизайн системы РТК
+ - 🤖 **[Renovate BOT](https://www.whitesourcesoftware.com/free-developer-tools/renovate)** - Автообнавление зависимостей
+ - 🩹 **[Patch-package](https://www.npmjs.com/package/patch-package)** - Чиним внешние зависимости не отвлекаясь от работы
+ - 📈 **Взаимосвязь компонентов и график зависимостей** - Инструмент для управления взаимоотношениями компонентов
+- 🚀 **[GitHub Actions](https://github.com/features/actions)** - Предустановленные экшены для гитхаба (TODO: переделать на gitlab CI)
+- 🤖🧠 **[Автоматическое ревью кода с помощью ChatGPT](https://openai.com/chatgpt)** - **Используйте силу AI для улучшения качества работы!**
+- 💯 **Идельный Lighthouse счет** - Потому что производительность это важно
+- 🚢 **[Semantic Release](https://github.com/semantic-release/semantic-release)** - Для автоматических чейнджлогов
+- 💻 **[T3 Env](https://env.t3.gg/)** - Легкое управление ENV переменными
 
-## Table of Contents
 
-- [Next.js Enterprise Boilerplate](#nextjs-enterprise-boilerplate)
-  - [📚 Features](#-features)
-  - [Table of Contents](#table-of-contents)
-  - [🎯 Getting Started](#-getting-started)
-  - [🚀 Deployment](#-deployment)
+
+
+## Оглавление
+
+- [Next.js RTK IT Boilerplate](#nextjs-enterprise-boilerplate)
+  - [📚 Фичи](#-features)
+  - [Оглавление](#table-of-contents)
+  - [🎯 Начало работы](#-getting-started)
+  - [🚀 Деплой](#-deployment)
   - [📃 Scripts Overview](#-scripts-overview)
   - [🔗 Coupling Graph](#-coupling-graph)
   - [🧪 Testing](#-testing)
@@ -58,75 +56,73 @@ With this template, you get all the awesomeness you need:
   - [📜 License](#-license)
   - [Contributors](#contributors)
 
-## 🎯 Getting Started
+## 🎯 Начало работы
 
-To get started with this boilerplate, follow these steps:
+Для начала работы с шаблоном следуйте следующим шагам:
 
-1. Fork & clone repository:
+1. Форкните или склонируйте репозиторий:
 
 ```bash
-## Don't forget to ⭐ star and fork it first :)
-git clone https://github.com/<your_username)/next-enterprise.git
+git clone git@github.com:rtkit-ulsk/RTK-IT-enterprise.git
 ```
 
-2. Install the dependencies:
+2. Установите зависимости:
 
 ```bash
 yarn install --frozen-lockfile
 ```
 
-3. Run the development server:
+3. Запустите дев сервер:
 
 ```bash
 yarn dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Откройте [http://localhost:3000](http://localhost:3000) в броузере чтобы увидеть результат
 
-5. This project uses a git hook to enforce [conventional commits](https://github.com/qoomon/git-conventional-commits). To install the git hook, run the following command in the root directory of the project:
+5. Этот проект использует [conventional commits](https://github.com/qoomon/git-conventional-commits) для обеспечения однотипности коммитов. Для установки хуков выполните эту команду в корнеевой директории проекта:
 
 ```sh
 brew install pre-commit
 pre-commit install -t commit-msg
 ```
 
-## 🚀 Deployment
+## 🚀 Деплой
 
 Easily deploy your Next.js app with [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=github&utm_campaign=next-enterprise) by clicking the button below:
 
 [![Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise)
 
-## 📃 Scripts Overview
+## 📃 Обзор скриптов
 
-The following scripts are available in the `package.json`:
+Следующие скрипты доступны в `package.json`:
 
-- `dev`: Starts the development server with colorized output
-- `build`: Builds the app for production
-- `start`: Starts the production server
-- `lint`: Lints the code using ESLint
-- `lint:fix`: Automatically fixes linting errors
-- `prettier`: Checks the code for proper formatting
-- `prettier:fix`: Automatically fixes formatting issues
-- `analyze`: Analyzes the bundle sizes for Client, Server and Edge environments
-- `storybook`: Starts the Storybook server
-- `build-storybook`: Builds the Storybook for deployment
-- `test`: Runs unit and integration tests
-- `e2e:headless`: Runs end-to-end tests in headless mode
-- `e2e:ui`: Runs end-to-end tests with UI
-- `format`: Formats the code with Prettier
-- `postinstall`: Applies patches to external dependencies
-- `preinstall`: Ensures the project is installed with Yarn
-- `coupling-graph`: **Generates a coupling and cohesion graph for the components**
+- `dev`: Стартует дев сервер с цветным выводом в консоль
+- `build`: Билдит приложение для продакшена
+- `start`: Стартует продакшен сервер
+- `lint`: Линтит код
+- `lint:fix`: Автоматически исправляет ошибки с помощью линтера
+- `prettier`: Проверяет код на возможность форматирования
+- `prettier:fix`: Автоматически исправляет ошибки форматирования
+- `analyze`: Анализирует размер бандла для клиента и сревера
+- `storybook`: Стартует Storybook сервер
+- `build-storybook`: Билдит Storybook для деплоя
+- `test`: Запускает юнит и интеграционные тесты
+- `e2e:headless`: Запускает end-to-end тесты в хедлес режиме
+- `e2e:ui`: Запускает end-to-end tests с интерфейсом
+- `postinstall`: Применяет патчи для сторонних пакетов
+- `preinstall`: Проверяет установлен ли проект с помощью yarn
+- `coupling-graph`: **Генерирует граф зависимостей**
 
-## 🔗 Coupling Graph
+## 🔗 Граф зависимостей
 
-The `coupling-graph` script is a useful tool that helps visualize the coupling and connections between your project's internal modules. It's built using the [Madge](https://github.com/pahen/madge) library. To generate the graph, simply run the following command:
+Скрипт `coupling-graph` полезный инструмент который позволяет визуализировать зависимости внутренних модулей проекта. Он строится используя библиотеку [Madge](https://github.com/pahen/madge). Для получения графика, просто запустите команду:
 
 ```bash
 yarn coupling-graph
 ```
 
-This will create a `graph.svg` file, which contains a graphical representation of the connections between your components. You can open the file with any SVG-compatible viewer.
+Это создаст файл `graph.svg`, который содержит графическое представление зависимостей ваших компонентов. Файл можно открыть любым SVG просмотрщиком, например броузером
 
 ![graph](https://user-images.githubusercontent.com/28964599/233662744-3ba89713-8466-49cd-9be7-e6fb38191f58.png)
 
