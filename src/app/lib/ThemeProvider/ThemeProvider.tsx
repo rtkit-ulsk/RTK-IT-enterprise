@@ -1,6 +1,7 @@
 import { ThemeProvider as DCThemeProvider } from '@design-system-rt/rtk-ui-kit';
-import { localStorage } from 'lib/localeStorage';
 import { FC, PropsWithChildren, useMemo, useState } from 'react';
+import { theme as themeConfig } from 'src/shared/config/theme';
+import { localStorage } from 'src/shared/lib/localeStorage';
 
 import { THEME_LOCAL_STORAGE_KEY, ThemeContext, ThemeType } from './themeContext';
 
@@ -18,7 +19,7 @@ const ThemeProvider: FC<PropsWithChildren> = (props) => {
   );
 
   return (
-    <DCThemeProvider themeName={defaultThemeProps.theme} useCssVariables>
+    <DCThemeProvider themeName={defaultThemeProps.theme} useCssVariables themeConfig={themeConfig}>
       <ThemeContext.Provider value={defaultThemeProps}>{props.children}</ThemeContext.Provider>
     </DCThemeProvider>
   );

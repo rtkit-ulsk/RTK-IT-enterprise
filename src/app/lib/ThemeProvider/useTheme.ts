@@ -1,5 +1,5 @@
-import { localStorage } from 'lib/localeStorage';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
+import { localStorage } from 'src/shared/lib/localeStorage';
 
 import { THEME_LOCAL_STORAGE_KEY, ThemeContext, ThemeType } from './themeContext';
 
@@ -12,6 +12,12 @@ export interface IUseThemeResult {
 
 export const useTheme = (): IUseThemeResult => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    const oldTheme = theme === 'dark' ? 'light' : 'dark';
+    document.body.classList.remove(oldTheme);
+    document.body.classList.add(theme || 'light');
+  }, [theme]);
 
   const themeToggler = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';

@@ -14,10 +14,10 @@ const router = {
 describe('MyApp', () => {
   it('should render a component with page props', () => {
     const props: AppProps = {
-      Component: ({ title }) => (
+      Component: (prop) => (
         <>
           <div>Test Component</div>
-          <div>{title}</div>
+          <div>{prop.title}</div>
         </>
       ),
       pageProps: { title: 'Test Page' },

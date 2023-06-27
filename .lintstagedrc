@@ -1,0 +1,4 @@
+{
+    "*.{js,jsx,ts,tsx}": 'make fix-scripts',
+    "*.{css}": 'make fix-styles',
+}

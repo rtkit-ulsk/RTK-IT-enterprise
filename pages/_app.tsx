@@ -1,7 +1,9 @@
 import '../styles/global.css';
+import 'styles/variables.css';
+import '@design-system-rt/rtk-fonts';
 
-import ThemeProvider from 'components/ThemeProvider/ThemeProvider';
 import { AppProps } from 'next/app';
+import ThemeProvider from 'src/app/lib/ThemeProvider/ThemeProvider';
 
 const MyApp = (props: AppProps) => {
   const { Component, pageProps } = props;

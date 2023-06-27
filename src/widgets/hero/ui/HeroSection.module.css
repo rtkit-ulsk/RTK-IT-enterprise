@@ -1,0 +1,7 @@
+.root {
+    margin: var(--space-lg) auto var(--space-m) auto;
+    max-width: var(--container-width);
+    display: grid;
+    grid-template-columns: 920px 1fr;
+    justify-items: right;
+}

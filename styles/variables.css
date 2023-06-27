@@ -1,0 +1,5 @@
+:root {
+    --space-lg: calc(var(--spacing-spacing-full-768-xl)* 1px);
+    --space-m: calc(var(--spacing-spacing-vertical-375-l)* 1px);
+    --container-width: 1232px;
+}

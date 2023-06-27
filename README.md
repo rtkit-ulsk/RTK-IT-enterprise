@@ -102,8 +102,6 @@ Easily deploy your Next.js app with [Vercel](https://vercel.com/new?utm_medium=d
 - `start`: Стартует продакшен сервер
 - `lint`: Линтит код
 - `lint:fix`: Автоматически исправляет ошибки с помощью линтера
-- `prettier`: Проверяет код на возможность форматирования
-- `prettier:fix`: Автоматически исправляет ошибки форматирования
 - `analyze`: Анализирует размер бандла для клиента и сревера
 - `storybook`: Стартует Storybook сервер
 - `build-storybook`: Билдит Storybook для деплоя

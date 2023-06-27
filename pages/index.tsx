@@ -1,9 +1,7 @@
-import { Button } from 'components/Button/Button';
-import { useTheme } from 'components/ThemeProvider/useTheme';
 import Head from 'next/head';
+import { HomePage } from 'src/pages/home';
 
 const Index = () => {
-  const { theme, themeToggler } = useTheme();
   return (
     <>
       <Head>
@@ -17,8 +15,7 @@ const Index = () => {
         <title>Next.js RTK IT Boilerplate</title>
       </Head>
       <section>
-        <h2>Текущая цветовая тема: {theme}</h2>
-        <Button onClick={themeToggler}>Сменить тему</Button>
+        <HomePage />
       </section>
     </>
   );

@@ -1,0 +1,12 @@
+body {
+    transition: background .3s ease-out;
+    font-family: "Rostelecom Basis";
+}
+
+body.light {
+    background: #fff;
+}
+
+body.dark {
+    background: var(--black, #1E1A1F);
+}
